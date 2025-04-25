@@ -1,4 +1,4 @@
-//==================>ex 1
+// //==================>ex 1
 let yourChoise = ""
 const drink = prompt("оберіть напій : кава , чай або сік").toLowerCase()
 switch (drink){
@@ -19,10 +19,10 @@ switch (drink){
         break
 }
 console.log(yourChoise);
-//=================================
+// //=================================
 
 
-//====================ex 2
+// //====================ex 2
 let day = ""
 const choiseDay = prompt("введіть будь який день тижня").toLowerCase()
 if (choiseDay === "понеділок" || choiseDay === "вівторок" || choiseDay === "середа" || choiseDay === "четверг" || choiseDay === "п'ятниця"){
@@ -36,11 +36,11 @@ day = "робочий день"
 console.log(day);
 
 
-//=======================
+// //=======================
 
 
 
-//===========================ex 3
+// //===========================ex 3
 let num = ""
 const monthDay = Number(prompt("введіть номер місяця щоб дізнатися пору року"))
 if (monthDay === 1 || monthDay === 2 || monthDay === 12){
@@ -56,9 +56,9 @@ if (monthDay === 1 || monthDay === 2 || monthDay === 12){
     
 }
 console.log(num);
-//==================================
+// //==================================
 
-//===============================ex 4
+// //===============================ex 4
 let color = ""
 const uwaga = prompt("введіть колір : зелений , жовтий або червоний").toLowerCase()
 switch (uwaga){
@@ -93,7 +93,12 @@ if(operator === "+"){
 }else if(operator === "-"){
     sum = firstNumber - secondeNumber
 }else if (operator === "/"){
-    sum = firstNumber / secondeNumber
+    if(secondeNumber === 0){
+        sum = "не можна ділити через нуль"
+    }else{
+        sum = firstNumber / secondeNumber
+    }
+   
 }else if(operator === "*"){
     sum = firstNumber * secondeNumber
 }else {
